@@ -1,0 +1,13 @@
+opentracing:
+  jaeger:
+    log-spans: true
+    udp-sender:
+      host: "jaeger"
+      port: 6831
+
+server:
+  port: 9000
+
+spring:
+  application:
+    name: "animal-name-service"

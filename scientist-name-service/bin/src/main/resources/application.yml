@@ -1,0 +1,13 @@
+opentracing:
+  jaeger:
+    log-spans: true
+    udp-sender:
+      host: "jaeger"
+      port: 6831
+
+server:
+  port: 8090
+
+spring:
+  application:
+    name: "scientist-name-service"

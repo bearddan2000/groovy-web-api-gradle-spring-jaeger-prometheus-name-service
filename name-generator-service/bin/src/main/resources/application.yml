@@ -1,0 +1,28 @@
+animal:
+  service:
+    prefix:
+      url: "http://animal-name-service:9000"
+
+logging:
+  level:
+    io:
+      jaegertracing: "DEBUG"
+
+opentracing:
+  jaeger:
+    log-spans: true
+    udp-sender:
+      host: "jaeger"
+      port: 6831
+
+scientist:
+  service:
+    prefix:
+      url: "http://scientist-name-service:8090"
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: "name-generator-service"
